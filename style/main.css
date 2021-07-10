@@ -1,0 +1,380 @@
+body {
+    background-color: #131010;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+
+/* les elements dans le balise nav */
+
+nav {
+    background-color: #282626;
+    /* background-color : rgba( 100, 100, 100, 0.26); */
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+}
+
+#miniprofil {
+    /* background-color : green; */
+    height: 100%;
+}
+
+
+/* dans nav -> miniprofil */
+
+#pdp img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#nomPrenom {
+    position: relative;
+    top: -8px;
+    font-family: "Century Gothic";
+}
+
+
+/* dans nav -> miniprofil -> nomprenom */
+
+#nom {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#prenom {
+    color: #BCBCBC;
+    font-size: 15px;
+}
+
+
+/* dans nav -> miniprofil -> nomprenom -> prenom  */
+
+#pseudo {
+    color: #885050;
+    font-size: 16px;
+}
+
+#verticalLine {
+    border-left: 3px solid #707070;
+    height: 50px;
+}
+
+#miniprofil #nomPrenom,
+#miniprofil #verticalLine,
+#miniprofil #pdp {
+    display: inline-block;
+}
+
+
+/* dans nav */
+
+#options {
+    height: 100%;
+    float: right;
+}
+
+
+/* dans nav-> options */
+
+.contact {
+    width: 150px;
+}
+
+.contact .numero,
+.lienFb .nomFb {
+    font-family: "Gadugi";
+    font-size: 14px;
+    color: #BEBBDB;
+    position: relative;
+    top: -15px;
+}
+
+.contact .logoPhone,
+.lienFb .logoFb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0.2px solid #ffffff;
+}
+
+
+/* dans nav-> options -> contact  */
+
+.contact .logoPhone,
+.contact .numero {
+    display: inline-block;
+}
+
+.lienFb {
+    width: 150px;
+}
+
+
+/* dans nav -> options -> lienFb */
+
+.lienFb .logoFb,
+.lienFb .nomFb {
+    display: inline-block;
+}
+
+
+/* dans options */
+
+.options .contact,
+.options .lienFb {
+    display: inline-block;
+}
+
+
+/* dans nav */
+
+nav #miniprofil,
+nav .options {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+
+/* les éléments dans le balise corp  */
+
+#corp {
+    background-color: #2D2D2D;
+    width: 74%;
+    height: auto;
+    margin: 0px 13%;
+    /* padding : 0px 0px; */
+}
+
+#pdc {
+    width: 100%;
+}
+
+
+/* dans corp -> pdc */
+
+#couverture {
+    width: 100%;
+}
+
+#optionZonePdc {
+    background-color: rgba(3, 2, 2, 0.3);
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: -60px;
+}
+
+
+/* dans corp -> pdc -> optionZonePdc */
+
+#optionZonePdc button {
+    border: none;
+    border-radius: 7px;
+    background-color: #1987DB;
+    color: #ffffff;
+    font-family: "Gadugi";
+    font-size: 15px;
+    float: right;
+    padding: 7px 15px;
+    margin: 12px 20px;
+}
+
+#cv {
+    width: 100%;
+    margin: 10px auto;
+}
+
+
+/* dans corp cv */
+
+#contenu {
+    /* background-color : rgb(0, 255, 255); */
+    width: 60%;
+    height: 500px;
+    color: white;
+    font-size: 14px;
+    font-family: "Ebrima";
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+#profil {
+    background-color: #4E4E4E;
+    width: 30%;
+    height: auto;
+    float: right;
+    padding: 20px 0px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+
+/* dans corp -> profil */
+
+#profil #profile {
+    width: 120px;
+    margin-left: 30%;
+}
+
+#profil #titre {
+    text-align: center;
+    font-family: "Ebrima";
+    margin-bottom: 10px;
+}
+
+#presentation {
+    padding: 0px 7%;
+    margin-top: 5px;
+    text-align: justify;
+    font-family: "Gadugi";
+    font-size: 13px;
+}
+
+#profilOptions {
+    margin: auto 30px;
+}
+
+#profil hr {
+    margin: 5px 5%;
+}
+
+#titre,
+#presentation {
+    color: #ffffff;
+}
+
+#profilOptions .contact,
+#profilOptions .lienFb {
+    width: 130px;
+}
+
+#profilOptions .contact .logoPhone,
+#profilOptions .lienFb .logoFb {
+    width: 30px;
+    height: 30px;
+}
+
+#profilOptions .contact .numero,
+#profil .lienFb .nomFb {
+    font-size: 12px;
+}
+
+#arrow {
+    width: 20px;
+    position: relative;
+    left: -20px;
+    top: 50px;
+    transform: rotate(-90deg);
+}
+
+
+/* on élimine le numéro téléphone et le nom facebook si l'ecran devien petit */
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: blue;
+    }
+    #profilOptions .contact .numero,
+    #profil .lienFb .nomFb {
+        display: none;
+    }
+    #profilOptions .contact,
+    #profil .lienFb {
+        width: auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    body {
+        background-color: red;
+    }
+    #profil #profile {
+        margin-left: 28%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-color: green;
+    }
+    #profil {
+        padding: 0px 0px;
+    }
+    #profil #arrow,
+    #profil #titre,
+    #profil #profile,
+    #profil #presentation,
+    #profil hr,
+    #profil #profilOptions {
+        display: none;
+    }
+    #contenu {
+        width: auto;
+    }
+    #options .contact,
+    #options .lienFb {
+        width: 140px;
+    }
+    #options .contact .numero,
+    #options .lienFb .nomFb {
+        font-size: 12px;
+    }
+    #optionZonePdc {
+        height: 50px;
+        position: relative;
+        top: -50px;
+    }
+    #optionZonePdc button {
+        padding: 7px 15px;
+        margin: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        background-color: black;
+    }
+    #contenu {
+        font-size: 13px;
+    }
+    #optionZonePdc {
+        height: 40px;
+        position: relative;
+        top: -40px;
+    }
+    #optionZonePdc button {
+        padding: 7px 15px;
+        margin: 5px 20px;
+        font-size: 12px;
+    }
+    #nom {
+        color: #ffffff;
+        font-size: 17px;
+    }
+    #prenom {
+        color: #BCBCBC;
+        font-size: 13px;
+    }
+}
+
+#cv #contenu,
+#cv #profil {
+    display: inline-block;
+}
+
+
+/* dans corp -> cv -> contenu */
+
+.little {
+    width: 12px;
+}
+
+.logo {
+    border-radius: 50%;
+}
