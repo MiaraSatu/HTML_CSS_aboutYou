@@ -171,6 +171,18 @@ nav .options {
 
 /* dans corp -> pdc -> optionZonePdc */
 
+#optionZonePdc img {
+    width: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#optionZonePdc #pdpTmp {
+    display: none;
+}
+
 #optionZonePdc button {
     border: none;
     border-radius: 7px;
@@ -181,6 +193,11 @@ nav .options {
     float: right;
     padding: 7px 15px;
     margin: 12px 20px;
+}
+
+#optionZonePdc button,
+#optionZonePdc img {
+    display: inline-block;
 }
 
 #cv {
@@ -334,6 +351,9 @@ nav .options {
         padding: 7px 15px;
         margin: 8px 20px;
     }
+    #optionZonePdc #pdpTmp {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -360,6 +380,10 @@ nav .options {
     #prenom {
         color: #BCBCBC;
         font-size: 13px;
+    }
+    #optionZonePdc img {
+        margin-top: 5px;
+        margin-right: 5px;
     }
 }
 
