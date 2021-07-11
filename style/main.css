@@ -293,9 +293,9 @@ nav .options {
 /* on élimine le numéro téléphone et le nom facebook si l'ecran devien petit */
 
 @media screen and (max-width: 1300px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
     #profilOptions .contact .numero,
     #profil .lienFb .nomFb {
         display: none;
